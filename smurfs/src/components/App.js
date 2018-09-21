@@ -24,12 +24,8 @@ class App extends Component {
     return (
       <div className="App">
        <SmurfForm />
-       
-      {this.props.smurfs.map(smurf => {
-             return  (
-             <Smurf key={smurf.id} smurfs={this.props.smurfs}/>
-      )})}
-      </div>
+             <Smurf smurfs={this.props.smurfs}/>
+        </div>
     );
   }
 }

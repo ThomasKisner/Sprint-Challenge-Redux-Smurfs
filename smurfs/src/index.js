@@ -14,7 +14,7 @@ const reduxDevTools =
 
   const store = createStore(
   rootReducer,
-  compose(applyMiddleware(thunk),
+  compose(applyMiddleware(thunk, logger),
   reduxDevTools
   )
 );
